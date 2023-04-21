@@ -1,0 +1,19 @@
+@mixin flex($justify:center,$align:center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@mixin border(){
+    border: 0.2rem solid rgb(219, 216, 216);
+    border-radius: 0.5rem;
+}
+
+@mixin shimmer($height:1.5rem,$width:100%){
+    height: $height;
+    background-color: $shimmerbg;
+    margin: 0.5rem;
+    width: $width;
+    border-radius: $radius;
+}

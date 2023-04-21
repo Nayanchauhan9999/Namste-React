@@ -1,0 +1,269 @@
+body {
+  padding: 0.5rem;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-div-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 0.2rem solid rgb(219, 216, 216);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.main-div-header .logo {
+  font-size: 1rem;
+  color: indigo;
+  cursor: pointer;
+}
+.main-div-header nav a {
+  text-decoration: none;
+  font-size: larger;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+.main-div-header nav a:hover {
+  background-color: #f3f2f2;
+  border-radius: 0.2rem;
+}
+
+.parent_div_card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.routepath {
+  color: black;
+  text-decoration: none;
+  display: flex;
+}
+
+.main-div-card {
+  border: 0.2rem solid rgb(219, 216, 216);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 1rem;
+  background-color: white;
+}
+.main-div-card:hover {
+  box-shadow: 0.3rem 0.3rem 1rem rgb(192, 188, 188);
+  cursor: pointer;
+  transform: scale(1.01, 1.01);
+  transition: all ease-in-out 0.1s;
+  border-color: rgb(145, 138, 138);
+}
+.main-div-card .food-image {
+  box-sizing: border-box;
+  width: 100%;
+}
+.main-div-card .food-image img {
+  border-radius: 0.2rem;
+}
+.main-div-card .cuisines {
+  font-size: 0.8rem;
+}
+.main-div-card .more-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+}
+.main-div-card .more-info em {
+  background-color: green;
+  color: white;
+  padding: 0.1rem;
+  border-radius: 0.3rem;
+}
+.main-div-card .more-info .distance,
+.main-div-card .more-info .double-offer {
+  text-transform: uppercase;
+}
+
+.main-card-restaurant-details {
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.2rem;
+}
+.main-card-restaurant-details .restaurant_image {
+  width: 60%;
+  margin: auto;
+}
+.main-card-restaurant-details .restaurant_image img {
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 4px black;
+}
+.main-card-restaurant-details .two_div_parent {
+  border-bottom: 1px dotted rgb(183, 183, 183);
+  margin-top: 1rem;
+}
+.main-card-restaurant-details .two_div_parent .basic_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(249, 249, 249);
+  padding: 1rem;
+}
+.main-card-restaurant-details .two_div_parent .basic_info .right_div-restaurant-details {
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
+.main-card-restaurant-details .two_div_parent .basic_info .right_div-restaurant-details h4 {
+  border-bottom: 1px solid grey;
+  color: green;
+  overflow: hidden;
+}
+.main-card-restaurant-details .two_div_parent .basic_info .right_div-restaurant-details p {
+  font-weight: bold;
+  color: grey;
+}
+.main-card-restaurant-details .two_div_parent .basic_info .right_div-restaurant-details h4,
+.main-card-restaurant-details .two_div_parent .basic_info .right_div-restaurant-details p {
+  margin: 0;
+  padding: 0.4rem;
+}
+.main-card-restaurant-details .two_div_parent .basic_offer_div {
+  background-color: rgb(249, 249, 249);
+  padding: 1rem;
+}
+.main-card-restaurant-details .address {
+  background-color: rgb(249, 249, 249);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.all_shimmer_parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.shimmer_main_div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(219, 216, 216);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shimmer_main_div .shimmer_image {
+  height: 10rem;
+  background-color: rgb(203, 199, 199);
+  margin: 0.5rem;
+  width: 100%;
+  border-radius: 0.2rem;
+}
+.shimmer_main_div .shimmer_title {
+  height: 1.5rem;
+  background-color: rgb(203, 199, 199);
+  margin: 0.5rem;
+  width: 100%;
+  border-radius: 0.2rem;
+}
+.shimmer_main_div .shimmer_rating {
+  height: 1.5rem;
+  background-color: rgb(203, 199, 199);
+  margin: 0.5rem;
+  width: 55%;
+  border-radius: 0.2rem;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 0.8rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .parent_div_card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .all_shimmer_parent {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .all_shimmer_parent .shimmer_main_div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .parent_div_card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .all_shimmer_parent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-card-restaurant-details {
+    width: 80%;
+  }
+  .restaurant_image {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-div-card {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0.3rem;
+    border: 0.1rem solid #dbd8d8;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+  }
+  .main-div-card:hover {
+    box-shadow: 0.1rem 0.1rem 0.5rem rgb(192, 188, 188);
+  }
+  .main-div-card .resturant_name {
+    font-size: 0.8rem;
+  }
+  .main-div-card .more-info {
+    display: block;
+  }
+  .main-div-card .more-info .distance,
+  .main-div-card .more-info .double-offer,
+  .main-div-card .more-info .rating {
+    margin: 2px;
+  }
+  .main-card-restaurant-details {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  .main-card-restaurant-details .restaurant_image {
+    width: 90%;
+  }
+  .all_shimmer_parent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-div-header {
+    display: block;
+  }
+  .main-div-header .logo h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .main-div-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto;
+  }
+  .main-div-header nav a {
+    font-size: 0.9rem;
+  }
+  .shimmer_main_div {
+    width: 9rem;
+  }
+}/*# sourceMappingURL=swiggy.css.map */
